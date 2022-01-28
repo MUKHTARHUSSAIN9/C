@@ -3,9 +3,18 @@
 #include <stdio.h>
 
 int main(){
-    float a = 22.0/7;
-    double b = 22.0/7;
-    printf("%.10f\n%lf", a, b);
+    int a, b;
+    printf("Enter the value of a and b:");
+    scanf("%d%d", &a,&b);
+
+    switch (a>b){
+        case 0: //False Statement
+            printf ("%d is Maximum\n", b);
+            break;
+        case 1: //True Statement
+            printf("%d is Maximum\n", a);
+            break;
+    }
     
     return 0;
 }
