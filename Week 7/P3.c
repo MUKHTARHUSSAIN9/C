@@ -13,13 +13,13 @@ int main(){
     float r2 = (-b - sqrt((float) d))/2 * a; //Root 2
 
     switch ((d>0) + (d>=0)){ //Gives 2 if d>0; 1 if d = 0 and 0 if n is negative
-        case 2: //False Statement
+        case 2:
             printf ("%.2lf and %.2lf are the roots of the given Quadratic Equation\n", r1, r2);
             break;
-        case 1: //True Statement
+        case 1:
             printf("Both the roots are equal to %.2lf\n", r1);
             break;
-        case 0: //True Statement
+        case 0:
             printf("Roots are Imaginary!\n");
             printf("Root1 = %.2lf+%.2lfi and Root2 = %.2f-%.2fi\n",-b / (2 * a), sqrt(-d) / (2 * a),\
              -b / (2 * a), sqrt(-d) / (2 * a));
